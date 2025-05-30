@@ -44,7 +44,7 @@ RUN apt-get autoremove -y && \
 #COPY models/Qwen3-14B-AWQ /workspace/models/Qwen3-14B-AWQ
 
 # Or to move the downloaded HuggingFace files to the final image, if you chose this method
-#COPY --from=clone /workspace/models /workspace/models
+COPY --from=clone /workspace/models /workspace/models
 
 # Or you can use wget to download file(s) from the internet, or individual HuggingFace files only
 # Remember that these models usually need their json config files in the same folder for proper functionality
