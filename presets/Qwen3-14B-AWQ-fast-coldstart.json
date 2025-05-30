@@ -1,11 +1,11 @@
 {
     "vllm_config": {
         "engine_args":{
-            "model":"/workspace/models/Qwen3-14B-AWQ/",
+            "model":"/workspace/models/Synthia-S1-27b/",
             "quantization":"awq_marlin",
             "max_model_len":32768,
             "enforce_eager":true,
-            "served_model_name":"Qwen3-14B-AWQ",
+            "served_model_name":"Synthia-S1-27b",
             "enable_reasoning":true,
             "load_format":"auto",
             "reasoning_parser":"deepseek_r1",
@@ -26,6 +26,6 @@
             "VLLMC_AUTO_NETWORK_CACHE":false
         }
     },
-    "model": "Qwen3-14B-AWQ",
+    "model": "Synthia-S1-27b",
     "prewarm": true
 }
